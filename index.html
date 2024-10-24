@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="sticky-header">
+        <h1>Your Logo</h1>
+    </header>
+
+    <section class="video-banner">
+        <video autoplay muted loop>
+            <source src="videos/video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <div class="container scroll-container">
+        <section class="scroll-sequence__container apple-container">
+            <div class="scroll-sequence apple-sequence"></div>
+            <div class="scroll-sequence__content">
+                <div class="speak">
+                    <h1>Scroll Sequence</h1>
+                    <p>Just start scrolling</p>
+                </div>
+                <div class="speak">
+                    <h1> </h1>
+                    <p> </p>
+                </div>
+                <div class="speak">
+                    <h1> </h1>
+                    <p> </p>
+                </div>
+            </div>
+        </section>
+        <!--   <div class="spacer" style="height: 80vh"></div> -->
+        <section class="scroll-sequence__container tree-container">
+            <div class="scroll-sequence tree-sequence"></div>
+            <div class="scroll-sequence__content">
+                <div class="speak">
+                    <h1> </h1>
+                    <p> </p>
+                </div>
+                <div class="speak">
+                    <h1> </h1>
+                    <p> </p>
+                </div>
+                <div class="speak">
+                    <h1> </h1>
+                    <p> </p>
+                </div>
+        </section>
+        <!--   <div class="spacer"></div> -->
+    </div>
+
+    <section class="slider">
+        <div class="slides">
+            <div class="slide" id="slide1">
+                <video controls>
+                    <source src="videos/video1.mp4" type="video/mp4">
+                </video>
+                <p>Slide 1 Text</p>
+            </div>
+            <div class="slide" id="slide2">
+                <video controls>
+                    <source src="videos/video2.mp4" type="video/mp4">
+                </video>
+                <p>Slide 2 Text</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-tabs">
+        <div class="tabs">
+            <button class="tab-button" data-tab="1">Tab 1</button>
+            <button class="tab-button" data-tab="2">Tab 2</button>
+        </div>
+        <div class="tab-content" id="tab1">
+            <img src="images/image1.jpg" alt="Product 1">
+        </div>
+        <div class="tab-content" id="tab2" style="display:none;">
+            <img src="images/image2.jpg" alt="Product 2">
+        </div>
+    </section>
+
+    <script src='https://unpkg.com/scroll-out@2.2.3/dist/scroll-out.min.js'></script>
+    <script src="./script.js"></script>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

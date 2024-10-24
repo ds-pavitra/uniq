@@ -1,0 +1,119 @@
+:root {
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    text-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.video-banner video {
+    width: 100%;
+    height: auto;
+}
+
+.image-sequence {
+    height: 400px;
+    /* Adjust as needed */
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.product-tabs {
+    margin: 20px 0;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+}
+
+.tab-button {
+    margin: 0 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.tab-content {
+    display: none;
+    text-align: center;
+}
+
+.scroll-container {
+    height: 100vh;
+    background: black;
+}
+
+.speak {
+    margin: 150vh 0;
+}
+
+.speak:first-child {
+    margin-top: -50vh;
+}
+
+.speak[data-scroll] {
+    transform: translatey(calc(var(--viewport-y) * 30vh));
+    opacity: calc(var(--visible-y));
+}
+
+.scroll-sequence__content {
+    padding: 4em;
+}
+
+.scroll-sequence {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -5;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 3em;
+    width: 60wv;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+        width: 100%;
+    }
+}
